@@ -47,25 +47,25 @@ Make sure you have following softwares installed
             	Change line 42: 
 				from : pprint(interface_python["interfaces"]["interface"]["name"]["#text"])
 				to : pprint(interface_python["interfaces"])
-	    After changes in api_ncclient_example.py -lines 24 - 41 should look like -
-		netconf_filter = """
-		<filter>
-  		<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
-    		<interface>
-    		</interface>
-  		</interfaces>
-		</filter>
-		"""
+	    	After changes in api_ncclient_example.py -lines 24 - 41 should look like -
+			netconf_filter = """
+			<filter>
+  			<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    			<interface>
+    			</interface>
+  			</interfaces>
+			</filter>
+			"""
 
-		m = manager.connect(host=router["ip"],
-                    port=router["port"],
-                    username=router["user"],
-                    password=router["pass"],
-                    hostkey_verify=False)
+			m = manager.connect(host=router["ip"],
+                    	port=router["port"],
+                    	username=router["user"],
+                    	password=router["pass"],
+                    	hostkey_verify=False)
 
-		interface_netconf = m.get_config("running", netconf_filter)
-		interface_python = xmltodict.parse(interface_netconf.xml)["rpc-reply"]["data"]
-		pprint(interface_python["interfaces"])
+			interface_netconf = m.get_config("running", netconf_filter)
+			interface_python = xmltodict.parse(interface_netconf.xml)["rpc-reply"]["data"]
+			pprint(interface_python["interfaces"])
 	    
 	    Save and close all the files
    ## Excercise 2: Execute the Python scripts
