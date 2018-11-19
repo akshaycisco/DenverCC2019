@@ -11,17 +11,17 @@ Make sure you have following softwares installed
        * Anyconnect Host : dcloud-sjc-anyconnect.cisco.com
        * Username/ Password : check with proctor
   2. After succesfully "Connected to dcloud-sjc-anyconnect.cisco.com"
-       *Open RDP - 198.18.134.48
-       *Username : developer
-       *Password : C1sco12345
-       Note: The IP address is 198... not 192...   
+       * Open RDP - 198.18.134.48
+       * Username : developer
+       * Password : C1sco12345
+       * Note: The IP address is 198... not 192...   
   3. Now you must be logged into CentOS Machine where you will continue your lab.
   4. Open Terminal on the CentOS desktop and run following commands
         [developer@centos ~]$ cd code/
         [developer@centos code]$ source venv/bin/activate
         (venv) [developer@centos code]$ pip list
-        ** this will list all installed packages ** 
-        Note: Make sure (venv) prefix is present all the time.
+        * this will list all installed packages 
+        * Note: Make sure (venv) prefix is present all the time.
  ## Excercise 1:  Verify Python script for Accessing IOS-XE device
       1. Open 'Atom' Text Editor on Desktop
       2. Navigate to following folder 
@@ -70,15 +70,15 @@ Make sure you have following softwares installed
 	    Save and close all the files
    ## Excercise 2: Execute the Python scripts
       	1) Open Terminal on the CentOS desktop and run following commands
-       		 [developer@centos ~]$ cd code/
-        	 [developer@centos code]$ source venv/bin/activate
+		* [developer@centos ~]$ cd code/
+		* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	    
    ### Excercise 2a: Access IOS XE Device with CLI ( Using Netmiko Library)
-   	1) Open Terminal on the CentOS desktop and run following commands
-       		 [developer@centos ~]$ cd code/
-        	 [developer@centos code]$ source venv/bin/activate
+      	1) Open Terminal on the CentOS desktop and run following commands
+		* [developer@centos ~]$ cd code/
+		* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for Netmiko:
@@ -86,9 +86,9 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_netmiko_example.py
 		
    ### Excercise 2b: Access IOS XE Device with REST-API ( Using Requests Library)
-   	1) Open Terminal on the CentOS desktop and run following commands
-       		 [developer@centos ~]$ cd code/
-        	 [developer@centos code]$ source venv/bin/activate
+      	1) Open Terminal on the CentOS desktop and run following commands
+		* [developer@centos ~]$ cd code/
+		* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for RESTAPI:
@@ -96,9 +96,9 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_requests_example.py
 		
    ### Excercise 2c: Access IOS XE Device with NETCONF ( Using ncclient Library)
-   	1) Open Terminal on the CentOS desktop and run following commands
-       		 [developer@centos ~]$ cd code/
-        	 [developer@centos code]$ source venv/bin/activate
+      	1) Open Terminal on the CentOS desktop and run following commands
+		* [developer@centos ~]$ cd code/
+		* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for RESTAPI:
@@ -106,9 +106,9 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_ncclient_example.py	
 
    ### Excercise 2d: Access IOS XE Device with Ansible 
-   	1) Open Terminal on the CentOS desktop and run following commands
-       		 [developer@centos ~]$ cd code/
-        	 [developer@centos code]$ source venv/bin/activate
+      	1) Open Terminal on the CentOS desktop and run following commands
+		* [developer@centos ~]$ cd code/
+		* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/dnav3-code/intro-ansible
 	3) Follow detailed-instructions: 
