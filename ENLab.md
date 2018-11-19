@@ -70,15 +70,15 @@ Make sure you have following softwares installed
 	    Save and close all the files
    ## Excercise 2: Execute the Python scripts
       	1) Open Terminal on the CentOS desktop and run following commands
-		* [developer@centos ~]$ cd code/
-		* [developer@centos code]$ source venv/bin/activate
+	* [developer@centos ~]$ cd code/
+	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	    
    ### Excercise 2a: Access IOS XE Device with CLI ( Using Netmiko Library)
       	1) Open Terminal on the CentOS desktop and run following commands
-		* [developer@centos ~]$ cd code/
-		* [developer@centos code]$ source venv/bin/activate
+	* [developer@centos ~]$ cd code/
+	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for Netmiko:
@@ -87,8 +87,8 @@ Make sure you have following softwares installed
 		
    ### Excercise 2b: Access IOS XE Device with REST-API ( Using Requests Library)
       	1) Open Terminal on the CentOS desktop and run following commands
-		* [developer@centos ~]$ cd code/
-		* [developer@centos code]$ source venv/bin/activate
+	* [developer@centos ~]$ cd code/
+	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for RESTAPI:
@@ -97,8 +97,8 @@ Make sure you have following softwares installed
 		
    ### Excercise 2c: Access IOS XE Device with NETCONF ( Using ncclient Library)
       	1) Open Terminal on the CentOS desktop and run following commands
-		* [developer@centos ~]$ cd code/
-		* [developer@centos code]$ source venv/bin/activate
+	* [developer@centos ~]$ cd code/
+	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	3) Run the Python code for RESTAPI:
@@ -107,8 +107,8 @@ Make sure you have following softwares installed
 
    ### Excercise 2d: Access IOS XE Device with Ansible 
       	1) Open Terminal on the CentOS desktop and run following commands
-		* [developer@centos ~]$ cd code/
-		* [developer@centos code]$ source venv/bin/activate
+	* [developer@centos ~]$ cd code/
+	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/dnav3-code/intro-ansible
 	3) Follow detailed-instructions: 
