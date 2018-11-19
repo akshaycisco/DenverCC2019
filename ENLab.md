@@ -1,4 +1,4 @@
-Thanks for Joining the EN Lab Track - Cisco Connect @ Denver
+Thanks for Joining the EN Lab Track - Cisco Connect @ Denver (http://cs.co/denverlab18)
 
 # Lab Setup 
 Make sure you have following softwares installed
