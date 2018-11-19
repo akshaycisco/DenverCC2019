@@ -69,14 +69,14 @@ Make sure you have following softwares installed
 	    
 	    Save and close all the files
    ## Excercise 2: Execute the Python scripts
-      	1) Open Terminal on the CentOS desktop and run following commands
+   	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
 	    
    ### Excercise 2a: Access IOS XE Device with CLI ( Using Netmiko Library)
-      	1) Open Terminal on the CentOS desktop and run following commands
+   	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
@@ -96,7 +96,7 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_requests_example.py
 		
    ### Excercise 2c: Access IOS XE Device with NETCONF ( Using ncclient Library)
-      	1) Open Terminal on the CentOS desktop and run following commands
+   	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
@@ -106,7 +106,7 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_ncclient_example.py	
 
    ### Excercise 2d: Access IOS XE Device with Ansible 
-      	1) Open Terminal on the CentOS desktop and run following commands
+   	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
@@ -116,7 +116,8 @@ Make sure you have following softwares installed
 		
 	4) Run Ansible playbook - 
 		ansible-playbook ansible-02-ios-modules/02-ios_command_show.yaml
-  ## Excercise 3: Access DNA Center API with Postman
+ 
+ ## Excercise 3: Access DNA Center API with Postman
   	1) Open Postman App on Desktop
 	2) Ignore prompt for Updates & close all Pop-up windows
 	3) Make sure you see the Collections & Environment
