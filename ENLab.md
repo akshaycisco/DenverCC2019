@@ -86,7 +86,7 @@ Make sure you have following softwares installed
 		(venv) [developer@centos python_part_3]$ python api_netmiko_example.py
 		
    ### Excercise 2b: Access IOS XE Device with REST-API ( Using Requests Library)
-      	1) Open Terminal on the CentOS desktop and run following commands
+   	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Navigate to python_part_3
