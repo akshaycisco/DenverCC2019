@@ -8,8 +8,8 @@ Make sure you have following softwares installed
   
 # Lab Instructions
   1. Connect to Lab setup via Cisco Anyconnect
-       *Anyconnect Host : dcloud-sjc-anyconnect.cisco.com
-       *Username/ Password : check with proctor
+       * Anyconnect Host : dcloud-sjc-anyconnect.cisco.com
+       * Username/ Password : check with proctor
   2. After succesfully "Connected to dcloud-sjc-anyconnect.cisco.com"
        *Open RDP - 198.18.134.48
        *Username : developer
