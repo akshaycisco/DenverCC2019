@@ -22,7 +22,7 @@ Make sure you have following softwares installed
         (venv) [developer@centos code]$ pip list
         ** this will list all installed packages ** 
         Note: Make sure (venv) prefix is present all the time.
- ## Excercise 1:  Python script for Accessing IOS-XE device with CLI
+ ## Excercise 1:  Verify Python script for Accessing IOS-XE device
       1. Open 'Atom' Text Editor on Desktop
       2. Navigate to following folder 
             /code/netprog_basics/programming_fundamentals/python_part_3/
@@ -42,10 +42,85 @@ Make sure you have following softwares installed
                           "port": 830,
                           "user": "admin",
                           "pass": "C1sco12345"}
-            
-            
-      2. Navigate to python_part_3
+            File: api_ncclient_example.py .. line 28
+                delete line 28: <name>GigabitEthernet1</name>
+            	Change line 42: 
+				from : pprint(interface_python["interfaces"]["interface"]["name"]["#text"])
+				to : pprint(interface_python["interfaces"])
+	    After changes in api_ncclient_example.py -lines 24 - 41 should look like -
+		netconf_filter = """
+		<filter>
+  		<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    		<interface>
+    		</interface>
+  		</interfaces>
+		</filter>
+		"""
+
+		m = manager.connect(host=router["ip"],
+                    port=router["port"],
+                    username=router["user"],
+                    password=router["pass"],
+                    hostkey_verify=False)
+
+		interface_netconf = m.get_config("running", netconf_filter)
+		interface_python = xmltodict.parse(interface_netconf.xml)["rpc-reply"]["data"]
+		pprint(interface_python["interfaces"])
+	    
+	    Save and close all the files
+   ## Excercise 2: Execute the Python scripts
+      	1) Open Terminal on the CentOS desktop and run following commands
+       		 [developer@centos ~]$ cd code/
+        	 [developer@centos code]$ source venv/bin/activate
+	2) Navigate to python_part_3
             (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
-            
+	    
+   ### Excercise 2a: Access IOS XE Device with CLI ( Using Netmiko Library)
+   	1) Open Terminal on the CentOS desktop and run following commands
+       		 [developer@centos ~]$ cd code/
+        	 [developer@centos code]$ source venv/bin/activate
+	2) Navigate to python_part_3
+            (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
+	3) Run the Python code for Netmiko:
+	
+		(venv) [developer@centos python_part_3]$ python api_netmiko_example.py
+		
+   ### Excercise 2b: Access IOS XE Device with REST-API ( Using Requests Library)
+   	1) Open Terminal on the CentOS desktop and run following commands
+       		 [developer@centos ~]$ cd code/
+        	 [developer@centos code]$ source venv/bin/activate
+	2) Navigate to python_part_3
+            (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
+	3) Run the Python code for RESTAPI:
+	
+		(venv) [developer@centos python_part_3]$ python api_requests_example.py
+		
+   ### Excercise 2c: Access IOS XE Device with NETCONF ( Using ncclient Library)
+   	1) Open Terminal on the CentOS desktop and run following commands
+       		 [developer@centos ~]$ cd code/
+        	 [developer@centos code]$ source venv/bin/activate
+	2) Navigate to python_part_3
+            (venv) [developer@centos ~] cd /home/developer/code/netprog_basics/programming_fundamentals/python_part_3/
+	3) Run the Python code for RESTAPI:
+	
+		(venv) [developer@centos python_part_3]$ python api_ncclient_example.py	
+
+   ### Excercise 2d: Access IOS XE Device with Ansible 
+   	1) Open Terminal on the CentOS desktop and run following commands
+       		 [developer@centos ~]$ cd code/
+        	 [developer@centos code]$ source venv/bin/activate
+	2) Navigate to python_part_3
+            (venv) [developer@centos ~] cd /home/developer/code/dnav3-code/intro-ansible
+	3) Follow detailed-instructions: 
+		https://learninglabs.cisco.com/tracks/dnav3-track/intro-ansible-iosxe/ansible-ios-modules/step/2
+		
+	4) Run Ansible playbook - 
+		ansible-playbook ansible-02-ios-modules/02-ios_command_show.yaml
+
+   References: 
+   	Cisco DNA Lab Modules - https://learninglabs.cisco.com/tracks/dnav3-track
+	Cisco Devnet : https://developer.cisco.com/startnow/
+	
+   
         
         
