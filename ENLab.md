@@ -116,6 +116,25 @@ Make sure you have following softwares installed
 		
 	4) Run Ansible playbook - 
 		ansible-playbook ansible-02-ios-modules/02-ios_command_show.yaml
+  ## Excercise 3: Access DNA Center API with Postman
+  	1) Open Postman App on Desktop
+	2) Ignore prompt for Updates & close all Pop-up windows
+	3) Make sure you see the Collections & Environment
+		* Click Import - Top Left corner
+		* Choose File -> code/dnav3-code/postman/(all-files) -> Click Import
+	4) Go to Collections -> 'dnav3-dnac-nbapi-hello-network'
+		Make sure Environment on Top right is set to -> 'dnav3-dnac-nbapi-hello-network'
+	5) First lets get our Access token a.k.a Ticket
+		Collections ->'dnav3-dnac-nbapi-hello-network'->'1.Ticket' -> Send-Post request
+		Expected output:
+			200 OK 
+			Token:"...."
+	6) Using the Access Token from previous step we will send GET request to list all Network Device information
+		Collections ->'dnav3-dnac-nbapi-hello-network'->'2.Network Device' -> Send-GET request
+		Expected output:
+			200 OK 
+			(List of device information)
+
 
    References: 
    	Cisco DNA Lab Modules - https://learninglabs.cisco.com/tracks/dnav3-track
