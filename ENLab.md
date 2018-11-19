@@ -51,6 +51,7 @@ Make sure you have following softwares installed
             	Change line 42: 
 				from : pprint(interface_python["interfaces"]["interface"]["name"]["#text"])
 				to : pprint(interface_python["interfaces"])
+				
 	    	After changes in api_ncclient_example.py -lines 24 - 41 should look like -
 			netconf_filter = """
 			<filter>
