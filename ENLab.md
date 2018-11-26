@@ -28,19 +28,19 @@ Make sure you have following softwares installed
             cd /home/developer/code/DenverCC/
       3. Make sure the credentials & IP are as follows on following 3 files:
       
-            File: api_netmiko_example.py .. lines 18-22
+            File: api_netmiko.py .. lines 18-22
                 router = {"device_type": "cisco_ios",
                            "host": "198.18.134.11",
                            "user": "admin",
                            "pass": "C1sco12345"}
 			   
-            File: api_requests_example.py .. line 18-22
+            File: api_requests.py .. line 18-22
                 router = {"ip": "198.18.134.11,
 	                        "port": "443",
                           "user": "admin",
                           "pass": "C1sco12345"}
 			  
-            File: api_ncclient_example.py .. lines 19-23
+            File: api_ncclient.py .. lines 19-23
                 router = {"ip": "198.18.134.11",
                           "port": 830,
                           "user": "admin",
