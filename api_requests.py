@@ -35,4 +35,4 @@ pprint(r.text)
 
 api_data = r.json()
 interface_name = api_data["ietf-interfaces:interface"]["name"]
-interface_name
+pprint(interface_name)
