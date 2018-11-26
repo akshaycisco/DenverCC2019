@@ -15,7 +15,8 @@ Illustrate the following concepts:
 from netmiko import ConnectHandler
 from pprint import pprint
 
-router = {"host": "198.18.134.11",
+router = {"device_type": "cisco_ios",
+          "host": "198.18.134.11",
           "user": "admin",
           "pass": "C1sco12345"}
 
