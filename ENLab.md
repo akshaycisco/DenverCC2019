@@ -89,7 +89,7 @@ Make sure you have following softwares installed
 
    ### (Extra Credits) Excercise 2d: Access IOS XE Device with Ansible 
    	1) Open Terminal on the CentOS desktop and run following commands
-	* [developer@centos ~]$ cd code/
+	* [developer@centos ~]$ cd codrepositoriese/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Clone Repository for DNAv3
 			git clone https://github.com/CiscoDevnet/dnav3-code.git
@@ -121,10 +121,8 @@ Make sure you have following softwares installed
 			(List of device information)
 ## Pre-work
 	This lab is based on Dcloud Lab - Cisco DevNet Express DNA Sandbox v3.0a
-	If you want to try this lab make sure you clone following repositories
 		1) Reserve the Dcloud Lab, Follow Anyconnect & RDP steps (refer #Lab Setup, #Lab Instructions).
-		2) Open Terminal on CentOS
-		
+		2) Open Terminal on CentOS & use these commands to clone repositories, install libraries.
 			cd /home/developer/code
 			python3.6 -m venv venv
 			git clone https://github.com/CiscoDevnet/dnav3-code.git
