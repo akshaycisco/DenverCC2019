@@ -135,8 +135,8 @@ Make sure you have following softwares installed
 			source venv/bin/activate
 
 ## References 
-   	Cisco DNA Lab Modules - https://learninglabs.cisco.com/tracks/dnav3-track
-	Cisco Devnet : https://developer.cisco.com/startnow/
+  - Cisco DNA Lab Modules - [DNAv3](https://learninglabs.cisco.com/tracks/dnav3-track)
+  - Cisco Devnet : [Devnet Startnow](https://developer.cisco.com/startnow/)
 	
    
         
