@@ -89,7 +89,7 @@ Make sure you have following softwares installed
 
    ### (Extra Credits) Excercise 2d: Access IOS XE Device with Ansible 
    	1) Open Terminal on the CentOS desktop and run following commands
-	* [developer@centos ~]$ cd codrepositoriese/
+	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
 	2) Clone Repository for DNAv3
 			git clone https://github.com/CiscoDevnet/dnav3-code.git
