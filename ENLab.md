@@ -1,10 +1,13 @@
-Thanks for Joining the EN Lab Track - Cisco Connect @ Denver (http://cs.co/denverlab18)
+Thanks for Joining the EN Lab Track - Cisco Connect @ Denver (http://cs.co/denverlab18).
+### Note
+	This is a Instructor Led training. If you are working on this lab on your own. 
+	Please make sure you complete all the steps in #Prework section (below).
 
 # Lab Setup 
 Make sure you have following softwares installed
   1. [Install Cisco Anyconnect](https://developer.cisco.com/site/sandbox/anyconnect/)
   2. [Install RDP](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
-  
+
   
 # Lab Instructions
   1. Connect to Lab setup via Cisco Anyconnect
@@ -114,9 +117,22 @@ Make sure you have following softwares installed
 		Expected output:
 			200 OK 
 			(List of device information)
+## Pre-work
+	This lab is based on Dcloud Lab - Cisco DevNet Express DNA Sandbox v3.0a
+	If you want to try this lab make sure you clone following repositories
+		1) Reserve the Dcloud Lab, Follow Anyconnect & RDP steps (refer #Lab Setup, #Lab Instructions).
+		2) Open Terminal on CentOS
+		
+			cd /home/developer/code
+			python3.6 -m venv venv
+			git clone https://github.com/CiscoDevnet/dnav3-code.git
+			git clone https://github.com/CiscoDevNet/netprog_basics.git 
+			git clone https://github.com/akshaycisco/DenverCC2019.git
+			cd /home/developer/code/Devnet3
+			pip install -r requirements.txt 
+			source venv/bin/activate
 
-
-   References: 
+## References 
    	Cisco DNA Lab Modules - https://learninglabs.cisco.com/tracks/dnav3-track
 	Cisco Devnet : https://developer.cisco.com/startnow/
 	
