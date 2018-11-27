@@ -103,18 +103,14 @@ Make sure you have following softwares installed
  
  ## Excercise 3: Access DNA Center API with Postman
   	1) Open Postman App on Desktop
-	2) Ignore prompt for Updates & close all Pop-up windows
-	3) Make sure you see the Collections & Environment
-		* Click Import - Top Left corner
-		* Choose File -> code/dnav3-code/postman/(all-files) -> Click Import
-	4) Go to Collections -> 'dnav3-dnac-nbapi-hello-network'
+	2) Go to Collections -> 'dnav3-dnac-nbapi-hello-network'
 		Make sure Environment on Top right is set to -> 'dnav3-dnac-nbapi-hello-network'
-	5) First lets get our Access token a.k.a Ticket
+	3) First lets get our Access token a.k.a Ticket
 		Collections ->'dnav3-dnac-nbapi-hello-network'->'1.Ticket' -> Send-Post request
 		Expected output:
 			200 OK 
 			Token:"...."
-	6) Using the Access Token from previous step we will send GET request to list all Network Device information
+	4) Using the Access Token from previous step we will send GET request to list all Network Device information
 		Collections ->'dnav3-dnac-nbapi-hello-network'->'2.Network Device' -> Send-GET request
 		Expected output:
 			200 OK 
@@ -131,7 +127,12 @@ Make sure you have following softwares installed
 			cd /home/developer/code/Devnet3
 			pip install -r requirements.txt 
 			source venv/bin/activate
-
+		3) Set up Postman
+			Open Postman App on Desktop
+			Ignore prompt for Updates & close all Pop-up windows
+			Make sure you see the Collections & Environment
+			Click Import - Top Left corner
+			Choose File -> code/dnav3-code/postman/(all-files) -> Click Import
 ## References 
   - Cisco DNA Lab Modules - [DNAv3](https://learninglabs.cisco.com/tracks/dnav3-track)
   - Cisco Devnet : [Devnet Startnow](https://developer.cisco.com/startnow/)
