@@ -91,7 +91,9 @@ Make sure you have following softwares installed
    	1) Open Terminal on the CentOS desktop and run following commands
 	* [developer@centos ~]$ cd code/
 	* [developer@centos code]$ source venv/bin/activate
-	2) Navigate to python_part_3
+	2) Clone Repository for DNAv3
+			git clone https://github.com/CiscoDevnet/dnav3-code.git
+	2) Navigate to intro-ansible
             (venv) [developer@centos ~] cd /home/developer/code/dnav3-code/intro-ansible
 	3) Follow detailed-instructions: 
 		https://learninglabs.cisco.com/tracks/dnav3-track/intro-ansible-iosxe/ansible-ios-modules/step/2
