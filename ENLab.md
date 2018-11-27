@@ -1,7 +1,6 @@
 Thanks for Joining the EN Lab Track - Cisco Connect @ Denver (http://cs.co/denverlab18).
 ### Note
-	This is a Instructor Led training. If you are working on this lab on your own. 
-	Please make sure you complete all the steps in #Prework section (below).
+	This is a Instructor Led training. If you are working on this lab on your own please make sure you complete all the steps in #Prework section (below).
 
 # Lab Setup 
 Make sure you have following softwares installed
